@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.crystalapps.mint.location.library">
+
+    <application>
+        <activity
+            android:theme="@style/NoAnimTheme"
+            android:name=".shadow.ShadowLocationActivity" />
+    </application>
+
+</manifest>
