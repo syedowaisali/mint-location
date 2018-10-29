@@ -133,9 +133,14 @@ public class LocationSettingFragment extends Fragment {
 
     private void removeFragment() {
 
-        FragmentManager fragmentManager = getFragmentManager();
-        if (fragmentManager != null) {
-            fragmentManager.beginTransaction().remove(this).commit();
+        try {
+            FragmentManager fragmentManager = getFragmentManager();
+            if (fragmentManager != null) {
+                fragmentManager.beginTransaction().remove(this).commit();
+            }
+        }
+        catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
 }

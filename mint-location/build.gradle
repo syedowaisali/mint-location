@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://github.com/syedowaisali/mint-location'
     gitUrl = 'https://github.com/syedowaisali/mint-location.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.2'
 
     developerId = 'syedowaisali'
     developerName = 'Syed Owais Ali'
@@ -43,7 +43,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:16.0.0'
 
     // runtime permission library
-    implementation 'net.crystalapps:mint-runtime-permission:1.0.4'
+    implementation 'net.crystalapps:mint-runtime-permission:1.0.8'
 }
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
