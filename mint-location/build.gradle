@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 ext {
     bintrayRepo = 'maven'
@@ -13,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/syedowaisali/mint-location'
     gitUrl = 'https://github.com/syedowaisali/mint-location.git'
 
-    libraryVersion = '1.0.4'
+    libraryVersion = '1.0.5'
 
     developerId = 'syedowaisali'
     developerName = 'Syed Owais Ali'
@@ -43,8 +45,13 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:17.0.0'
 
     // runtime permission library
-    implementation 'net.crystalapps:mint-runtime-permission:1.0.9'
+    implementation 'net.crystalapps:mint-runtime-permission:1.1.0'
+    compile "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+repositories {
+    mavenCentral()
+}
