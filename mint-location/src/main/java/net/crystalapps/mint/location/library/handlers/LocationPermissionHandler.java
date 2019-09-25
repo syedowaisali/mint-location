@@ -1,7 +1,7 @@
 package net.crystalapps.mint.location.library.handlers;
 
-import android.support.annotation.NonNull;
-import android.support.v4.app.FragmentActivity;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
 
 import net.crystalapps.permission.runtime.library.callbacks.SettingOpener;
 import net.crystalapps.permission.runtime.library.models.Perm;

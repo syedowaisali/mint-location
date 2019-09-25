@@ -1,7 +1,7 @@
 package net.crystalapps.mint.location.library.config;
 
-import android.support.annotation.NonNull;
-import android.support.v4.app.FragmentActivity;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
 
 import net.crystalapps.mint.location.library.defaults.MintLocationPermissionHandler;
 import net.crystalapps.mint.location.library.handlers.LocationPermissionHandler;
@@ -15,7 +15,8 @@ public class EasyLocationConfig {
 
     private static EasyLocationConfig INSTANCE;
 
-    @NonNull private LocationPermissionHandler<FragmentActivity> locationPermissionHandler;
+    @NonNull
+    private LocationPermissionHandler<FragmentActivity> locationPermissionHandler;
 
     public static EasyLocationConfig getInstance() {
         return INSTANCE == null ? INSTANCE = new EasyLocationConfig() : INSTANCE;

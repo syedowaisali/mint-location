@@ -40,7 +40,7 @@ android {
 dependencies {
 
     // location service library
-    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
 
     // runtime permission library
     implementation 'net.crystalapps:mint-runtime-permission:1.0.8'

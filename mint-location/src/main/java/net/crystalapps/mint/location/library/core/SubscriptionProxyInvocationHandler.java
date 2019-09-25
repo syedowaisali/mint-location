@@ -1,7 +1,8 @@
 package net.crystalapps.mint.location.library.core;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
@@ -22,9 +23,12 @@ import java.lang.reflect.Method;
 class SubscriptionProxyInvocationHandler implements InvocationHandler {
 
 
-    @NonNull private final LocationRequest locationRequest;
-    @NonNull private final LocationUpdatesListener listener;
-    @NonNull private final FusedLocationProviderClient locationService;
+    @NonNull
+    private final LocationRequest locationRequest;
+    @NonNull
+    private final LocationUpdatesListener listener;
+    @NonNull
+    private final FusedLocationProviderClient locationService;
 
     SubscriptionProxyInvocationHandler(@NonNull Context context, @NonNull LocationRequest locationRequest, @NonNull LocationUpdatesListener listener) {
 
